@@ -16,7 +16,7 @@
     <div id="home">
       <nav class="navbar navbar-expand-md navbar-dark fixed-top">
         <a class="navbar-brand">
-          <img src="img/Logo.jpeg" alt="LOGO" />
+          <img src="img/viktor-forgacs-FcDqdJUM6B4-unsplash.jpg" alt="LOGO" />
         </a>
 
         <button
@@ -37,13 +37,16 @@
               <a class="nav-link" href="#course">gov.pl</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#features">MOZLIWOSCI</a>
+              <a class="nav-link" href="#features">Aktualności</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#resources">ZASOBY</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#clients">EKSPERCI</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#form">ZAPISY</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#contact">KONTAKT</a>
@@ -60,10 +63,10 @@
       </div>
 
       <div class="text-center caption">
-        <h1>Witaj na RWD kursie!</h1>
-        <h3>Wykorzystasz mozliwosci Bootstrapa</h3>
-        <a class="btn btn-outline-secondary btn-lg" href="#course"
-          >Zaczynam naukę!</a
+        <h1>Witaj na stronie o covid-19!</h1>
+        <h3>Wspólnie pokonamy pandemię</h3>
+        <a class="btn btn-outline-secondary btn-lg" href="#form"
+          >Zapisz się na szczepienie!</a
         >
       </div>
     </div>
@@ -87,13 +90,8 @@
     <!-- Start section features -->
     <div id="features">
 		<div class="jumbotron text-center">
-			<h2>Poznaj gorące technologie:</h2>
-			<ul class="features-list">
-				<li>Tworzenie layoutów html/css</li>
-				<li>Programowanie w Javascript wg. EC</li>
-				<li>React</li>
-				<li>React Native</li>
-			</ul>
+			<h2>Aktualne dane o zachorowaniach</h2>
+			<iframe width="100%" height="480" frameborder="0" src="https://koronawirusunas.pl/u/polska-nowe"></iframe>
 			<hr class="line">
 		</div>
 	</div>
@@ -109,23 +107,23 @@
 				<div class="row text-center">
 					<div class="col-md-4">
 						<div class="resource">
-							<i class="fas fa-terminal fa-5x"></i>	
-							<h3>Terminal</h3>
-							<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sapiente minus aut, officiis iusto excepturi culpa numquam qui accusantium debitis hic provident repellat. Eveniet incidunt laudantium odit aliquid ullam sequi reiciendis?</p>
+							<i class="fas fa-lungs fa-5x"></i>
+							<h3>Respiratory</h3>
+							<p>Nie bez powodu nazywane jest „sztucznym płucem”. Choć to, jak wygląda respirator, ma niewiele wspólnego z prawdziwym narządem. Jego działanie skutecznie zastępuje lub wspomaga pracę mięśni, biorących udział w oddychaniu</p>
 						</div>	
 					</div>
 					<div class="col-md-4">
 						<div class="resource">
-							<i class="fab fa-btc fa-5x"></i>
-							<h3>Bitcoin</h3>
-							<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sapiente minus aut, officiis iusto excepturi culpa numquam qui accusantium debitis hic provident repellat. Eveniet incidunt laudantium odit aliquid ullam sequi reiciendis?</p>
+							<i class="fas fa-head-side-mask fa-5x"></i>
+							<h3>Maseczki</h3>
+							<p>Podstawowy środek ochrony przed zakażeniem. Działanie opiera się na powstaniu bariery fizycznej powodującej utrudnienie wniknięcia wirusa do organizmu</p>
 						</div>	
 					</div>
 					<div class="col-md-4">
 						<div class="resource">
-							<i class="fab fa-js-square fa-5x"></i>
-							<h3>Javascript</h3>
-							<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sapiente minus aut, officiis iusto excepturi culpa numquam qui accusantium debitis hic provident repellat. Eveniet incidunt laudantium odit aliquid ullam sequi reiciendis?</p>
+							<i class="fas fa-syringe fa-5x"></i>
+							<h3>Szczepionki</h3>
+							<p>Rozwiązanie, które docelowo ma zapewnić odporność społeczeństwa na ciężki przebieg COVID-19</p>
 						</div>	
 					</div>
 				</div>
@@ -177,17 +175,68 @@
 			</div>
 		</div>
 	</div>
-    <!-- End section clients -->
+	<!-- End section clients -->
+	
+	<!-- start section form -->
+	<div id="form">
+		<div class="col-12 text-center">
+			<h3 class="heading">Wypełnij dane i wyraź chęć otrzymania szczepionki</h3>
+			<form>
+				<div class="form-row">
+					<div class="form-group col-md-6">
+						<label for="firstname">Imię</label>
+						<input type="text" class="form-control" id="firstname" placeholder="np. Jan">
+					</div>
+					<div class="form-group col-md-6">
+						<label for="lastname">Nazwisko</label>
+						<input type="text" class="form-control" id="lastname" placeholder="np. Kowalski">
+					</div>
+				</div>
+				<div class="form-row">
+					<div class="form-group col-md-4">
+						<label for="street">Ulica</label>
+						<input type="text" class="form-control" id="street" placeholder="np. Marszałkowska 10">
+					</div>
+					<div class="form-group col-md-2">
+						<label for="homeNumber">Numer domu</label>
+						<input type="text" class="form-control" id="homeNumber" placeholder="np. 23">
+					</div>
+					<div class="form-group col-md-2">
+						<label for="postcode">Kod pocztowy</label>
+						<input type="text" class="form-control" id="postcode" placeholder="np. 03-140">
+					</div>
+					<div class="form-group col-md-4">
+						<label for="city">Miasto</label>
+						<input type="text" class="form-control" id="city" placeholder="np. Warszawa">
+					</div>
+				</div>
+				<div class="form-row">
+					<div class="form-group col-md-5">
+						<label for="pesel">Numer pesel</label>
+						<input type="number" class="form-control" id="pesel" placeholder="np. 87121212121212">
+					</div>
+					<div class="form-group col-md-4">
+						<label for="email">Adres email</label>
+						<input type="text" class="form-control" id="email" placeholder="np. kowalski.jan@gmail.com">
+					</div>
+					<div class="form-group col-md-3">
+						<label for="phoneNumber">Numer telefonu</label>
+						<input type="number" class="form-control" id="phoneNumber" placeholder="np. 555 444 333">
+					</div>
+				</div>
+				<button type="submit" class="btn btn-submit btn-secondary">Wyślij</button>
+			</form>
+		</div>
+	</div>
+	<!-- end section form -->
 
     <!-- Start section contact -->
     <div id="contact">
 		<footer>
 			<div class="col-12 text-center">
-				<h3 class="heading">Kontakt do twórców:</h3>
-				<img src="img/Logo.jpeg" alt="LOGO">
-				<p>Lorem ipsum dolor sit amet.</p>
-				<hr>
-				<strong>Kontakt telefoniczny 555444333</strong>
+				<h3 class="heading">Kontakt do przychodni:</h3>
+				<strong>Kontakt telefoniczny 555444333 </strong><br>
+				<strong>ul.Mickiewicza 10, Warszawa</strong>
 				<hr>
 				<p>Social media:</p>
 				<a href="https://www.youtube.com" target="_blank">
@@ -205,7 +254,10 @@
     <!--- Script Source Files -->
     <script src="js/jquery-3.3.1.min.js"></script>
     <script src="bootstrap-4.1.3-dist/js/bootstrap.min.js"></script>
-    <script src="https://use.fontawesome.com/releases/v5.5.0/js/all.js"></script>
+    <script
+      src="https://use.fontawesome.com/releases/v5.15.2/js/all.js"
+      data-auto-a11y="true"
+    ></script>
     <!--- End of Script Source Files -->
   </body>
 </html>

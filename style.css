@@ -35,7 +35,7 @@ body{
 
 /* landing */
 .home-inner{
-  background-image: url(img/computers.png);
+  background-image: url(img/martin-sanchez-kTMlSiScL7Y-unsplash.jpg);
   background-size: contain;
 }
 
@@ -43,7 +43,7 @@ body{
   width: 100%;
   max-width: 100%;
   position: absolute;
-  top: 40%;
+  top: 70%;
   color:white;
   text-transform: uppercase;
   z-index: 1;
@@ -73,10 +73,6 @@ body{
   margin-bottom:0;
 }
 
-.features-list{
-  list-style: none;
-}
-
 #features .line{
   margin-bottom: 0;
 }
@@ -103,6 +99,17 @@ body{
   margin: 0 auto;
 }
 
+/* form */
+#form{
+  background-color: #f4f4f4;
+  margin: 2em;
+  border: 2px solid #222222;
+  border-radius: .5em;
+}
+.btn-submit{
+  width: 100%
+}
+
 /* Footer  */
 footer {
   border: 2px dashed darkgrey;
@@ -120,6 +127,7 @@ footer img{
 footer a:hover, footer p, footer h3{
   color:black;
 }
+
 
 
 /* Own media queries */
